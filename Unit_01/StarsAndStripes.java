@@ -10,7 +10,7 @@ import static java.lang.System.*;
 
 public class StarsAndStripes
 {
-   public StarsAndStripes()								//
+   public StarsAndStripes()								//default constructor
    {
       out.println("StarsAndStripes");
       printTwoBlankLines();
