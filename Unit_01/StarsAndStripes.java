@@ -34,11 +34,21 @@ public class StarsAndStripes
    
    public void printASmallBox()
    {	
+	   out.println(" _________");
+	   out.println("|         |");
+	   out.println("|         |");
+	   out.println("|_________|");
 	   
    }
  
    public void printABigBox()
    { 	
+	   out.println(" ______________");
+	   out.println("|              |");
+	   out.println("|              |");
+	   out.println("|              |");
+	   out.println("|              |");
+	   out.println("|______________|");
    }   
    
    public static void main (String[] args)
@@ -46,5 +56,11 @@ public class StarsAndStripes
 	   StarsAndStripes A = new StarsAndStripes();			//instantiation uses the class to create an object [pub static void--creates object]
 	   A.printTwentyStars();
 	   A.printTwentyDashes();
+	   A.printASmallBox();
+	   A.printTwentyStars();
+	   A.printTwentyDashes();
+	   A.printTwentyStars();
+	   A.printTwentyDashes();
+	   A.printABigBox();
 }
 }
