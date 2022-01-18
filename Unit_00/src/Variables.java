@@ -21,7 +21,7 @@ public class Variables
 		byte byteOne = 127;
 		short shortOne = -312;
 		int intOne = 101222;
-		long longne = 1111112222;
+		long longOne = 1111112222;
 		
 
 		//decimal variables
@@ -41,8 +41,8 @@ public class Variables
 		System.out.println("*                               *");
 		System.out.println("*08 bit - byteOne = "+byteOne+"\t\t*");
 		System.out.println("*16 bit - shortOne = "+shortOne+"\t\t*");
-		System.out.println("*32 bit - intOne = "+byteOne+"\t\t*");
-		System.out.println("*64 bit - longOne = "+shortOne+"\t\t*");
+		System.out.println("*32 bit - intOne = "+intOne+"\t\t*");
+		System.out.println("*64 bit - longOne = "+longOne+"\t\t*");
 
 		
 		System.out.println("*32 bit - doubleOne = "+doubleOne+"\t\t*");
