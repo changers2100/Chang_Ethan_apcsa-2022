@@ -2,9 +2,9 @@
 //www.apluscompsci.com
 
 //Name - Ethan Chang
-//Date -
-//Class -
-//Lab  -
+//Date - 1/18/2022
+//Class - CSA Period 1
+//Lab  - AsciiBox
 
 public class AsciiBox
 {
