@@ -15,6 +15,12 @@ public class DistanceRunner
 	public static void main( String[] args )
 	{
 		//add test cases	
+
+		Distance A = new Distance();
+		Distance B = new Distance(10, 15, 20, 18);
+		A.print();
+		System.out.println(B);
+		
 			
 	}
 }
