@@ -23,10 +23,6 @@ public class Distance
 
 	public Distance(int x1, int y1, int x2, int y2)		//specific constructor
 	{
-		System.out.println(x1);
-		System.out.println(y1);
-		System.out.println(x2);
-		System.out.println(y2);
 		setCoordinates(xOne, yOne, xTwo, yTwo);
 		calcDistance();
 	}
@@ -41,8 +37,7 @@ public class Distance
 
 	public void calcDistance()
 	{
-		distance = Math.sqrt(Math.pow(xTwo-xOne,2)+Math.pow(yTwo-yOne,2));	
-		System.out.println(Math.pow((xTwo-xOne),2));
+		distance = Math.sqrt((Math.pow((xTwo-xOne),2)+(Math.pow((yTwo-yOne),2))));
 	}
 	
 	public double getDistance()
