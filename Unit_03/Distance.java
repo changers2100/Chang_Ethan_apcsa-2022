@@ -23,7 +23,7 @@ public class Distance
 
 	public Distance(int x1, int y1, int x2, int y2)		//specific constructor
 	{
-		setCoordinates(xOne, yOne, xTwo, yTwo);
+		setCoordinates(x1,y1,x2,y2);
 		calcDistance();
 	}
 
