@@ -33,13 +33,11 @@ public class NumberVerifyRunner
 		System.out.println("-850 is odd :: " + NumberVerify.isOdd(-850));
 		
 		
-		
 		Scanner keyboard = new Scanner(System.in);
 		out.println("Enter a number :: ");
 		int a = keyboard.nextInt();
-		boolean b = NumberVerify.isEven(a);
-		System.out.println(a + " is even :: "+ b);
-		boolean c = NumberVerify.isOdd(a);
-		System.out.println(a + " is odd :: "+c);
+		
+		System.out.println(a + " is even :: "+ NumberVerify.isEven(a));
+		System.out.println(a + " is odd :: "+ NumberVerify.isOdd(a));
 	}
 }
