@@ -11,17 +11,14 @@ public class AddSubMult
 	public static double check( double a, double b )
 	{
 	
-	if (a>b) {
-		System.out.println(a-b);
-	}
-	
-	if (b>a) {
+		if (a==b) {
+			return a*b;}
+		
+		else if (a > b){
+			return a-b;
+		}
+		
+		
 		return(b-a);
-	}
-	
-	else {
-		System.out.print(a*b);
-	}
-	
 	}
 }
