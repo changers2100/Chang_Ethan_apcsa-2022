@@ -45,7 +45,7 @@ public class StringEquality
 			return wordOne + " has the same letters as " + wordTwo + " :)" +"\n";
 	}
 		else {
-			return wordOne + " does not have the same letters as " + wordTwo + " :(" + "\n";
+			return wordOne + " does not have the same letters as " + wordTwo + "\n";
 		}
 	}
 }

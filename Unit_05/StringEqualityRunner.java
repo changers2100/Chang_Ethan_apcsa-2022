@@ -14,12 +14,30 @@ public class StringEqualityRunner
 	{
 		//add test cases
 		StringEquality a = new StringEquality();
-		a.setWords("hi", "dog");
+		a.setWords("hello", "goodbye");
 		out.println(a);
 		
 		
-		a.setWords("good morning", "good morning");
+		a.setWords("one", "two");
 		out.println(a);
+		
+		
+		a.setWords("three", "four");
+		out.println(a);
+		
+		a.setWords("TCEA", "UIL");
+		out.println(a);
+		
+		a.setWords("ABC", "ABC");
+		out.println(a);
+		
+		a.setWords("ABC", "CBA");
+		out.println(a);
+		
+		a.setWords("Same", "Same");
+		out.println(a);
+		
+		
 		
 	}
 }

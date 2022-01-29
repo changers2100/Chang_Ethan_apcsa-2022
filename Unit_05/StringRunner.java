@@ -22,7 +22,6 @@ public class StringRunner
 		out.println(a);
 		
 		
-		
 		out.print("Enter a string :: ");
 		String c= keyboard.nextLine(); 
 		a.setString(c);
