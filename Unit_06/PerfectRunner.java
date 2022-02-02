@@ -8,7 +8,24 @@ public class PerfectRunner
 {
 	public static void main( String args[] )
 	{
-		//add test cases
-																
+		Perfect test = new Perfect();
+		
+		test.setNumber(496);
+		out.println(test);
+									
+		
+		test.setNumber(45);
+		out.println(test);
+		
+		test.setNumber(6);
+		out.println(test);
+		
+		
+		test.setNumber(14);
+		out.println(test);
+		
+		
+		
+
 	}
 }

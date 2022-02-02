@@ -29,18 +29,18 @@ public class LetterRemover
 	public String removeLetters()
 	{
 		String look = String.valueOf(lookFor);
-		String cleaned = "";
+		String removed = "";
 		
 		for (int i=0; i<sentence.length(); i++) {
 			if(sentence.charAt(i)!= lookFor) {
-				cleaned += sentence.charAt(i);
+				removed += sentence.charAt(i);			//every time sentence character is not in the char rem (lookFor), add the character to the cleaned return
 			}
 		}
-		return cleaned;
+		return removed;
 	}
 
 	public String toString()
 	{
-		return sentence + " - letter to remove " + lookFor +"\n" + removeLetters() +"\n\n";
+		return sentence + " - letter to remove: " + lookFor +"\n" + removeLetters() +"\n\n";
 	}
 }
