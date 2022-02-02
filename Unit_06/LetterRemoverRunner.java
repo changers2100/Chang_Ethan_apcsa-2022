@@ -13,6 +13,19 @@ public class LetterRemoverRunner
 		
 		test.setRemover("I am Sam I am", 'a');
 		out.println(test);
+		
+		test.setRemover("ssssssssxssssesssssesss", 's');
+		out.println(test);
+		
+		test.setRemover("qwertyqwertyqwerty", 'a');
+		out.println(test);
+		
+		test.setRemover("abababababa", 'b');
+		out.println(test);
+		
+		test.setRemover("abababababa", 'x');
+		out.println(test);
+
 											
 	}
 }
