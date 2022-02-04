@@ -28,11 +28,24 @@ public class BiggestDouble
 
 	public double getBiggest()
 	{
-		if()
+		if(one>two && one>three && one>four) {
+			return one;
+		}
+		else if(two > one && two > three && two > four) {
+			return two;
+		}
+		else if(three > one && three > two && three>four) {
+			return three;
+		}
+		
+		else {
+			return four;
+		}
+		
 	}
 
 	public String toString()
 	{
-	   return "";
+	   return "" + one +" "+ two +" "+ three+" " + four;
 	}
 }
