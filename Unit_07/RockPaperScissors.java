@@ -12,19 +12,35 @@ public class RockPaperScissors
 
 	public RockPaperScissors()
 	{
+		setPlayers("");
 	}
 
 	public RockPaperScissors(String player)
 	{
+		setPlayers(player);
 	}
 
 	public void setPlayers(String player)
 	{
+		playChoice = player;
+		switch((int)Math.random()*3)
+		{
+		case 0: compChoice = "R";
+		case 1: compChoice = "P";
+		case 2: compChoice = "S";
+		}
 	}
 
 	public String determineWinner()
 	{
-		String winner="";
+		String winner="";	
+		
+		switch(playChoice)
+		{
+		case "R":
+		case "r":
+			if (compChoice.equalsIgnoreCase("P"))
+				winner += "Computer wins <<Paper Covers Rock>>";
 		return winner;
 	}
 

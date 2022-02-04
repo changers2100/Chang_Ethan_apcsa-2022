@@ -1,3 +1,5 @@
+package activity 2;
+
 import java.util.List;
 import java.util.ArrayList;
 
@@ -64,7 +66,14 @@ public class Deck {
 	 *         previously dealt.
 	 */
 	public Card deal() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** references
+		if (isEmpty()) {
+			return null;
+		}
+		size --;
+		Card c = cards.get(size);
+		Card c = cards[size];
+		return c;
 	}
 
 	/**
