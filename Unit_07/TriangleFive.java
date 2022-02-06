@@ -35,8 +35,19 @@ public class TriangleFive
 	{
 		String output="";
 		char currLetter = letter;
-		for (int i=0; i<=amount; i++) {
-			curr
+		for (int i=0; i<=amount; i++) 				//run through four times (amount = 4)
+		{
+			currLetter = letter;					//currLetter = C
+			for(int j =0; j< amount-1; j++) {		//j goes until one greaeter than amount-1 --3 times, number of words in each line
+				
+				
+				for(int k=amount; k > j; k--) {		//k is the number of letters for each word so starts at amount 4, then decreases to 3 then two then 1until it is greater than J
+					if(currLetter+j >'Z')
+						currLetter -= 26;
+					output += (char)(currLetter+j);
+				}
+				output += " ";
+			}
 		}
 		
 		return output;
