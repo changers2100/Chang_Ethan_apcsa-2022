@@ -1,7 +1,3 @@
-//(c) A+ Computer Science
-//www.apluscompsci.com
-//Name -
-
 import static java.lang.System.*;
 
 public class TriangleFive
@@ -28,27 +24,31 @@ public class TriangleFive
 
 	public void setAmount(int amt)
 	{
-		amount = amt;	
+		amount = amt;
 	}
 
 	public String toString()
 	{
 		String output="";
-		char currLetter = letter;
-		for (int i=0; i<=amount; i++) 				//run through four times (amount = 4)
-		{
-			currLetter = letter;					//currLetter = C
-			for(int j =0; j< amount-1; j++) {		//j goes until one greaeter than amount-1 --3 times, number of words in each line
-				
-				
-				for(int k=amount; k > j; k--) {		//k is the number of letters for each word so starts at amount 4, then decreases to 3 then two then 1until it is greater than J
-					if(currLetter+j >'Z')
-						currLetter -= 26;
-					output += (char)(currLetter+j);
+		char a = letter;
+		for (int i = 0; i < amount; i++) //0-1-2-3
+		{	
+			a = letter;  //helps the alphabet loop back around
+			for (int j = 0; j < amount-i; j++)//0-1-2
+			{
+				for (int k = amount; k > j; k--) //k = 4, 3, 2, 1
+				{
+					if (a+j > 'Z') a -= 26;  //C+0 = C, C+1 = D, E
+					output += (char)(a+j);
 				}
 				output += " ";
+			
 			}
+			
+			output += "\n";
 		}
+
+
 		
 		return output;
 	}
