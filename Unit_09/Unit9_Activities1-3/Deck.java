@@ -1,5 +1,9 @@
+pacakge activity2;
 import java.util.List;
+
+import activity1.Card;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * The Deck class represents a shuffled deck of cards.
@@ -9,9 +13,9 @@ import java.util.ArrayList;
 public class Deck {
 
 	/**
-	 * cards contains all the cards in the deck.
+	 * cards contains all the cards in the deck. cards.length returns total number of cards
 	 */
-	private List<Card> cards;
+	private Card[] cards;
 
 	/**
 	 * size is the number of not-yet-dealt cards.
@@ -31,6 +35,14 @@ public class Deck {
 	 */
 	public Deck(String[] ranks, String[] suits, int[] values) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+				//this creates the number of cards (length of rank array * length of suit array)
+		cards = new Card[rank.length*suits.length];
+		for(int i = 0; i<ranks.length; i++) {
+			for(int j = 0; j<suits.length; j++) {			//loops through the 4 different suits for each rank
+				Card c = new Card(ranks[rank], suits, values[rank]);
+			}
+		}
+		shuffle();
 	}
 
 
@@ -40,6 +52,7 @@ public class Deck {
 	 */
 	public boolean isEmpty() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+		return (size == 0);
 	}
 
 	/**
@@ -48,6 +61,7 @@ public class Deck {
 	 */
 	public int size() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+		return size;
 	}
 
 	/**
@@ -55,6 +69,10 @@ public class Deck {
 	 * and reset the size to represent the entire deck.
 	 */
 	public void shuffle() {
+		for(int i = cards.length-1; i>0; i--)
+			int total = i+1;
+			int initial = 0;
+			int rand = (int)
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 4 *** */
 	}
 
@@ -65,6 +83,13 @@ public class Deck {
 	 */
 	public Card deal() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+		if(size<=0) {
+			return null;
+		}
+		else {
+			size -= 1;
+			return cards[size];
+		}
 	}
 
 	/**
