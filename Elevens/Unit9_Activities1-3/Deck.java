@@ -42,6 +42,7 @@ public class Deck {
 				Card c = new Card(ranks[rank], suits, values[rank]);
 			}
 		}
+		size = cards.length;
 		shuffle();
 	}
 

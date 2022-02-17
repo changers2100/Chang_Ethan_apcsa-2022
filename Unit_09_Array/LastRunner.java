@@ -3,9 +3,9 @@
 //Name -
 //Date -
 
-public class DownRunner
+public class LastRunner
 {
 	public static void main( String args[] )
-	{											
+	{
 	}
 }

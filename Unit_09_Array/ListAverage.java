@@ -6,9 +6,9 @@
 import java.util.List;
 import java.util.ArrayList;
 
-public class ListSumFirst
+public class ListAverage
 {
-	public static int go(List<Integer> ray)
+	public static double go( List<Integer> ray)
 	{
 		return 0;
 	}
