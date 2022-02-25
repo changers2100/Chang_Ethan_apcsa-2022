@@ -1,6 +1,4 @@
- * This is a class that tests the Card class.
- */
-package activity1;
+
 public class CardTester {
 
 	/**
@@ -14,7 +12,7 @@ public class CardTester {
 		Card kingSpades13 = new Card("king", "spades", 13);
 		Card fourClubs4 = new Card("four", "clubs", 4);
 		
-		System.out.print(aceHearts1().match(kingSpades13))
+		System.out.print(aceHearts1.matches(kingSpades13));
 		
 		System.out.print(aceHearts1);
 		System.out.print(kingSpades13);
