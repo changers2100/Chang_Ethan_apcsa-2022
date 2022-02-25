@@ -3,11 +3,9 @@
 //Name -
 //Date -
 
-import java.util.*;
-
-public class GetNumsRunner
+public class OddToEvenRunner
 {
 	public static void main( String args[] )
-	{										
+	{
 	}
 }

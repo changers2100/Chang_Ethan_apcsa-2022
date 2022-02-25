@@ -6,10 +6,10 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListLast
+public class ListOddToEven
 {
-	public static boolean go(List<Integer> ray)
+	public static boolean go( List<Integer> ray )
 	{
-		return true;
+		return false;
 	}
 }
