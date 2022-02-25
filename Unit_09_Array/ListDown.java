@@ -5,7 +5,7 @@
 
 import java.util.List;
 import java.util.ArrayList;
-
+	
 public class ListDown
 {
 	//go() will return true if all numbers in numArray
