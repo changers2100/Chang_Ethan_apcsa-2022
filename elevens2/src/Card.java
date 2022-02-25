@@ -1,8 +1,4 @@
- * Card.java
- *
- * <code>Card</code> represents a playing card.
- */
-package activity1;
+
 public class Card {
 
 	/**
@@ -20,7 +16,6 @@ public class Card {
 	 */
 	private int pointValue;
 
-.
    /**
 	 * Creates a new <code>Card</code> instance.
 	 *
