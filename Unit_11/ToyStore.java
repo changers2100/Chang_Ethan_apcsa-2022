@@ -14,24 +14,43 @@ public class ToyStore
 
 	public ToyStore()
 	{
+		toyList = new ArrayList<Toy>();
 	}
 
 	public void loadToys( String toys )
 	{
+		
 	}
   
   	public Toy getThatToy( String nm )
   	{
+  		for(int i = 0; i< toyList.size(); i++) {
+  			if(toyList.get(i).getName().equals(nm)) {
+  				return toyList.get(i);
+  			}
+  		}
   		return null;
   	}
   
   	public String getMostFrequentToy()
   	{
-  		return "";
+  		int count = toyList.get(0).getCount();
+  		String toyName = toyList.get(0).getName();
+  		
+  		for(int i = 0; i<toyList.size(); i++) {
+  			if(toyList.get(i).getCount() > count) {
+  				count = toyList.get(i).getCount();
+  				toyName = toyList.get(i).getName();
+  			}
+  		}
+  		
+  		return toyName;
   	}  
   
   	public void sortToysByCount()
   	{
+  		ArrayList<Toy> sortList = new ArrayList<Toy>();
+  		
   	}  
   	  
 	public String toString()
