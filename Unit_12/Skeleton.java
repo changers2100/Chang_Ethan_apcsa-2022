@@ -7,6 +7,7 @@ import static java.lang.System.*;
 public class Skeleton implements Monster
 {
 	//add instance variables	
+
 	private String name;
 	private int size;
 	//add a constructor
@@ -45,4 +46,12 @@ public class Skeleton implements Monster
 	public String toString() {
 		return name + " " + size;
 	}
+
+
+	//add a constructor
+
+	//add code to implement the Monster interface
+
+	//add a toString
+
 }
