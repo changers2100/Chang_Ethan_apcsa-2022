@@ -1,4 +1,3 @@
-
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -800,7 +799,10 @@ public class PictureExplorer implements MouseMotionListener, ActionListener, Mou
    */
   public static void main( String args[])
   {
-    Picture pix = new Picture("beach.jpg");
+	//Picture pix = new Picture("beach.jpg");
+	//Picture pix = new Picture("Narutos_selfie_344_3543114b.jpg");
+	//Picture pix = new Picture("snowman.jpg");
+	Picture pix = new Picture("seagull.jpg");
     pix.explore();
   }
   
